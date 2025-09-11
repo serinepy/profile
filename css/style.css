@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { 
+    text-decoration:none
+}
+li {
+    list-style: none;
+    cursor: pointer;
+padding:15px 20px }
+
+li:hover,.active {
+    background:#5F6768;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    text-direction:'rtl';
+    color:black !important;
+
+}
+.clear-fix {
+    clear: both;
+}
+
+
+.header-menu-item {
+    display:inline
+}
+
+.header-menu-item-link {
+    padding: 0 15px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #333!important;
+}
+
+.head {
+    background:#00EFFF;
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:end
+}
+
+.nav { 
+    display:flex;
+    justify-content:end;
+    
+    
+}
+.show {
+    display: inline-block !important; 
+}
+
+.header-menu-burger {
+    display: none;
+    /* background-color: white; */
+    border: none;
+    line-height: 80px;
+    background:#00EFFF;
+}
+
+
+/* @media (max-width:1199.98px) {
+    .app {
+        width: 992px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .app {
+        width: 768px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .app {
+        width: 576px;
+    }
+} */
+
+/* @media (max-width:575.98px) {
+    .app {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+} */
+
+.app {
+    width:100%;
+}
+
+@media (max-width:991.98px) {
+   
+    .header-menu-item{
+        padding: 0 5px;
+        
+    }
+   
+
+}
+
+@media (max-width:767.98px) {
+    .header-menu-burger {
+        display: inline-block;
+        padding:20px;    
+    }
+    .nav {
+        display: none;
+        width: 100%;
+    }
+
+    .header-menu-item {
+        display: block;
+        border-bottom: 1px solid #cecece;
+        text-align:center;
+
+    }
+}
+
+@media (max-width:1199.98px) {
+    .container {
+        width: 992px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width:767.98px) {
+.container {
+        width: 576px;
+    }
+}
+@media (max-width:575.98px) {
+    .container {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    
+    }
+}
+
+
+.img1 {
+    width:120px;
+    height:120px;
+    margin-top:40px;
+    margin-right:40px;
+    border-radius:50%;
+    
+}
+
