@@ -18,14 +18,12 @@ li:hover,.active {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size:13px;
-    text-direction:'rtl';
+    font-size:1rem;
+    /* direction:'rtl'; */
     color:black !important;
 
 }
-.clear-fix {
-    clear: both;
-}
+
 
 
 .header-menu-item {
@@ -65,31 +63,21 @@ body {
     background:#00EFFF;
 }
 
-
-/* @media (max-width:1199.98px) {
-    .app {
-        width: 992px;
+.leftRightAngle {
+    width: 0px;
+    height: 0px;
+    border: 40px solid;
+    border-bottom-color: green;
+    border-top-color: transparent;
+    border-left-color:green;
+    border-right-color: transparent;
+    
+    top:0;
+    right:0;
     }
-}
 
-@media (max-width:991.98px) {
-    .app {
-        width: 768px;
-    }
-}
 
-@media (max-width:767.98px) {
-    .app {
-        width: 576px;
-    }
-} */
-
-/* @media (max-width:575.98px) {
-    .app {
-        width: calc(100% - 30px);
-        padding: 0 15px;
-    }
-} */
+    
 
 .app {
     width:100%;
@@ -104,6 +92,7 @@ body {
    
 
 }
+
 
 @media (max-width:767.98px) {
     .header-menu-burger {
@@ -121,6 +110,7 @@ body {
         text-align:center;
 
     }
+   
 }
 
 @media (max-width:1199.98px) {
@@ -155,6 +145,80 @@ body {
     margin-top:40px;
     margin-right:40px;
     border-radius:50%;
+    margin-left:20px;
     
 }
+
+#resume {
+    display:flex;
+    padding:80px;
+    justify-content:center;
+    flex-wrap:wrap-reverse; 
+    align-items:center; 
+    line-height:30px;
+    text-align:center;
+    text-wrap:wrap;
+    max-width
+    
+}
+
+.img1{
+    border:5px solid  beige; 
+}
+
+#resume > div {
+    max-width:600px;
+}
+
+#school {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#f1f1f1;
+    padding:25px
+}
+
+
+.titr {
+    border:1px  solid black;
+    width:150px;
+    padding:15px 20px;
+    font-weight:light !important;
+    text-align:center;
+    text-wrap:no-wrap;
+    margin:15px;
+}
+.cadr {
+    border:2px solid green;
+    margin:10px 0;
+    width:500px;
+    text-align:center;
+    padding:15px;
+    line-height:25px;
+    position:absolute
+    
+
+}
+
+ #skills {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  
+    
+} 
+
+.skill {
+    display: flex;
+    
+     justify-content:space-evenly; 
+    flex-wrap:wrap;
+    width:70%;
+
+    
+}
+.skill >div {
+    width:400px;
+}
+
 
