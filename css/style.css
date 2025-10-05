@@ -1,128 +1,148 @@
+@font-face {
+	font-family: 'Yekan';
+	src: url( '../fonts/Yekan.eot' );
+	src: url( '../fonts/Yekan.eot?#iefix' ) format( 'embedded-opentype' ),
+		url( '../fonts/Yekan.woff2' ) format( 'woff2' ),
+		url( '../fonts/Yekan.woff' ) format( 'woff' ),
+		url( '../fonts/Yekan.ttf' ) format( 'truetype' ),
+		url( '../fonts/Yekan.svg#Yekan' ) format( 'svg' );
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a { 
-    text-decoration:none
+
+body {
+    font-family: Yekan, sans-serif;
+    font-size:1rem;
+    color:black !important;
 }
+
 li {
     list-style: none;
     cursor: pointer;
-padding:15px 20px }
+    padding:15px 20px ;
+}
 
-li:hover,.active {
+a { 
+    text-decoration:none
+}
+
+ .active, li:hover{
     background:#5F6768;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:1rem;
-    /* direction:'rtl'; */
-    color:black !important;
-
-}
-
-
-
-.header-menu-item {
-    display:inline
 }
 
 .header-menu-item-link {
     padding: 0 15px;
     line-height: 80px;
     font-weight: 700;
-    color: #333!important;
+  
 }
 
 .head {
-    background:#00EFFF;
+    background:#A2F3C0;
     position:fixed;
     width:100%;
     display:flex;
-    justify-content:end
+    flex-direction:row;
+    justify-content:start;
+    
+
 }
 
-.nav { 
+ .nav { 
     display:flex;
-    justify-content:end;
+    justify-content:start;
     
     
 }
-.show {
+.show { 
     display: inline-block !important; 
 }
 
 .header-menu-burger {
     display: none;
-    /* background-color: white; */
+    background:#A2F3C0;
     border: none;
     line-height: 80px;
-    background:#00EFFF;
+    
+}
+    
+.app {
+    width:100%;
 }
 
 .leftRightAngle {
     width: 0px;
     height: 0px;
     border: 40px solid;
-    border-bottom-color: green;
-    border-top-color: transparent;
-    border-left-color:green;
-    border-right-color: transparent;
-    
+    border-bottom-color: transparent;
+    border-top-color:green;
+    border-left-color:transparent;
+    border-right-color: green;
+    position:absolute;
     top:0;
     right:0;
+    display:none;
     }
 
 
-    
-
-.app {
-    width:100%;
-}
 
 @media (max-width:991.98px) {
-   
     .header-menu-item{
-        padding: 0 5px;
-        
+        padding: 0 5px;    
     }
-   
 
-}
+    
+   }
 
 
 @media (max-width:767.98px) {
     .header-menu-burger {
         display: inline-block;
-        padding:20px;    
+        padding:10px;
+       
+          
     }
+
     .nav {
         display: none;
         width: 100%;
+        
+        
+        
     }
 
     .header-menu-item {
         display: block;
         border-bottom: 1px solid #cecece;
         text-align:center;
-
+         
+        
     }
-   
+
 }
+
 
 @media (max-width:1199.98px) {
     .container {
         width: 992px;
     }
+
+    
 }
 
 @media (max-width:991.98px) {
     .container {
         width: 768px;
     }
+    
 }
 
 @media (max-width:767.98px) {
@@ -130,41 +150,43 @@ body {
         width: 576px;
     }
 }
+
 @media (max-width:575.98px) {
     .container {
         width: calc(100% - 30px);
         padding: 0 15px;
     
     }
-}
+    .leftRightAngle {
+        display:block;
+    }
+} 
+
+
 
 
 .img1 {
-    width:120px;
-    height:120px;
+    width:180px;
+    height:180px;
     margin-top:40px;
     margin-right:40px;
     border-radius:50%;
     margin-left:20px;
+    border:5px solid  beige; 
     
 }
 
 #resume {
-    display:flex;
-    padding:80px;
+    display:flex; 
     justify-content:center;
-    flex-wrap:wrap-reverse; 
+    flex-wrap:wrap;
     align-items:center; 
     line-height:30px;
     text-align:center;
-    text-wrap:wrap;
-    max-width
-    
+    text-wrap:wrap;  
+        
 }
 
-.img1{
-    border:5px solid  beige; 
-}
 
 #resume > div {
     max-width:600px;
@@ -181,22 +203,24 @@ body {
 
 .titr {
     border:1px  solid black;
-    width:150px;
+    width:200px;
     padding:15px 20px;
     font-weight:light !important;
     text-align:center;
     text-wrap:no-wrap;
     margin:15px;
 }
+
+
 .cadr {
     border:2px solid green;
     margin:10px 0;
+    position:relative;
     width:500px;
     text-align:center;
     padding:15px;
     line-height:25px;
-    position:absolute
-    
+  
 
 }
 
@@ -222,3 +246,10 @@ body {
 }
 
 
+.contacts {
+    width:750px;
+    display:grid;
+    grid-template-columns: 80px 200px auto 300px 100px;
+    justify-content:center;
+
+}

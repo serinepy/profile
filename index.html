@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <meta charset="UTF-8">
@@ -9,25 +9,27 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="java.js"></script>
+
     <title>Profile</title>
 </head>
 
-<body>
+<body dir="rtl">
     <section class="app">
         <header>
 
             <div class="head">
                 <ul class="nav" id="menu">
-                    <li class="active" class="header"><a class="header-menu-item" href="#resume" alt="_blank">خلاصه
-                            رزومه</a></li>
-                    <li class=header><a href="#school" class="header-menu-item" alt="_blank">تحصیلی سوابق </a></li>
-                    <li><a href="#skills" class="header-menu-item" alt="_blank">مهارت ها</a></li>
-                    <li class=header><a href="#projects" class="header-menu-item" alt="_blank"> پروژه ها</a></li>
-                    <li class=header> <a href="#contacts" class="header-menu-item" alt="_blank">تماس با ما</a></li>
+                    <li class="header active"><a  href="#resume" class="header-menu-item">خلاصه  رزومه</a></li>
+                    <li class=header><a href="#school" class="header-menu-item">سوابق تحصیلی</a></li>
+                    <li class="header"><a href="#skills" class="header-menu-item">مهارت ها</a></li>
+                    <li class="header"><a href="#lang" class="header-menu-item">زبان</a></li>
+                    <li class=header><a href="#projects" class="header-menu-item"> پروژه ها</a></li>
+                    <li class=header> <a href="#contacts" class="header-menu-item">تماس با من</a></li>
                 </ul>
-                <div> <button class="header-menu-burger" onclick="showMenu()"><i class="fa fa-bars"
-                            aria-hidden="true"></i></button></div>
+                <div> <button class="header-menu-burger" onclick="showMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
             </div>
 
         </header>
@@ -36,70 +38,125 @@
         <section id="resume">
 
             <div>
+                <img src="images/img1.jpg" class="img1" alt="person" />
+            </div>
+
+            <div>
                 <h3> سرینه پارسامیان</h3>
                 <span style="color: rgb(20, 197, 49); font-size: 1rem;"> علاقه مند به طراحی سایت</span>
                 <hr style="color:beige; margin: 8px;" />
-                <p>فارغ¬التحصیل کارشناسی ارشد اقتصاد شهری و علاقه¬مند به مباحث برنامه نویسی هستم، برای همین در دوره¬های
-                    برنامه¬نویسی فرانت اند شرکت کردم و در حین آموزش چند پروژه انجام دادم.</p>
-                <p style="font-size:12px ; font-weight:lighter">************@gmail.com</p>
-                <p style="font-size: 12px; font-weight:lighter;">0936***9</p>
-            </div>
-            <img src="./images/icons8-user-96.png" class="img1" alt="person" />
+                <p>فارغ‌التحصیل کارشناسی اقتصاد و کارشناسی ارشد اقتصاد شهری هستم. طی چند سال اخیر به یادگیری مهارت‌های
+                    برنامه‌نویسی فرانت‌اند (HTML, CSS, JavaScript) پرداخته‌ام و پروژه‌های تمرینی در گیت‌هاب دارم.
+                    علاقه‌مندم در تیم‌های پویا، چه در حوزه وب و چه در بخش‌های اداری، تجربه کسب کنم و رشد کنم.</p>
+                <!-- <ul>
+                    <li style="font-size:12px ; font-weight:lighter">************@gmail.com</li>
 
-        </section>
-        <section id="school">
-          
+                    <li style="font-size: 12px; font-weight:lighter;">0936***9</li>
+                </ul> -->
+            </div>
+    </div>
+    </section>
 
-            <h3 class="titr">سوابق تحصیلی</h3>
-            <div class="cadr">
-                <div class="leftRightAngle"></div>
-                <p style="font-weight: bold;">کارشناسی ارشد اقتصاد شهری</p>
-                <p>نام موسسه:دانشگاه هنر اصفهان </p>
-            </div>
-            <div class="cadr">
-                <div class="leftRightAngle"></div>
-                <p style="font-weight: bold;">کارشناسی اقتصاد</p>
-                <p style="font-weight: bold;">اقتصاد نظری</p>
-                <p>نام موسسه: دانشگاه اصفهان</p>
-            </div>
-        </section>
-        <section id="skills">
+    <section id="school">
+        <h3 class="titr">سوابق تحصیلی</h3>
+        <div class="cadr">
+            <div class="leftRightAngle"></div>
+            <p style="font-weight: bold;">کارشناسی ارشد اقتصاد شهری</p>
+            <p>نام موسسه:دانشگاه هنر اصفهان </p>
+        </div>
+        <div class="cadr">
+            <div class="leftRightAngle"></div>
+            <p style="font-weight: bold;">کارشناسی اقتصاد</p>
+            <p style="font-weight: bold;">اقتصاد نظری</p>
+            <p>نام موسسه: دانشگاه اصفهان</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div>
+            <h3 class="titr">مهارت ها</h3>
+        </div>
+        <div class="skill">
             <div>
-                <h3 class="titr">مهارت ها</h3>
+                <h4> Html:</h4> <progress value="70" max="100"></progress>
             </div>
-            <div class="skill">
-                <div>
-                    <h4> Html:</h4> <progress value="70" max="100"></progress>
-                </div>
-                <div>
-                    <h4>css:</h4> <progress value="70" max="100"></progress>
-                </div>
-                <div>
-                    <h4>javascript: </h4> <progress value="70" max="100"></progress>
-                </div>
-                <div>
-                    <h4>bootstrap:</h4> <progress value="70" max="100"></progress>
-                </div>
-                <div>
-                    <h4> react:</h4> <progress value="70" max="100"></progress>
-                </div>
-                <div>
-                    <h4>excel:</h4> <progress value="70" max="100"></progress>
-                </div>
-                <div>
-                    <h4> word:</h4> <progress value="70" max="100" height="80"></progress>
-                </div>
+            <div>
+                <h4>css:</h4> <progress value="70" max="100"></progress>
             </div>
-        </section>
-        <section id="projects">
-            <h3>پروژه ها</h3>
-        </section>
-        <section class="contacts">
-            <h3>تماس با ما</h3>
+            <div>
+                <h4>javascript: </h4> <progress value="70" max="100"></progress>
+            </div>
+            <div>
+                <h4>bootstrap:</h4> <progress value="70" max="100"></progress>
+            </div>
+            <div>
+                <h4> react:</h4> <progress value="70" max="100"></progress>
+            </div>
+            <div>
+                <h4>excel:</h4> <progress value="70" max="100"></progress>
+            </div>
+            <div>
+                <h4> word:</h4> <progress value="70" max="100" height="80"></progress>
+            </div>
+        </div>
 
-        </section>
+    </section>
+    <section id="lang">
+        <h3 class="titr">زبان</h3>
+        <h4>انگلیسی</h4>
+
+        <div>
+            <h4> خواندن</h4> <progress value="70" max="100"></progress>
+        </div>
+        <div>
+            <h4>نوشتن</h4> <progress value="70" max="100"></progress>
+        </div>
+        <div>
+            <h4> مهارت گفتاری </h4> <progress value="70" max="100" height="80"></progress>
+        </div>
+        <div>
+            <h4>مهارت شنیداری</h4> <progress value="70" max="100" height="80"></progress>
+        </div>
+        </div>
+        <h4> ارمنی</h4>
+        <div>
+            <h4> خواندن</h4> <progress value="70" max="100"></progress>
+        </div>
+        <div>
+            <h4>نوشتن</h4> <progress value="70" max="100"></progress>
+        </div>
+        <div>
+            <h4> مهارت گفتاری </h4> <progress value="70" max="100" height="80"></progress>
+        </div>
+        <div>
+            <h4>مهارت شنیداری</h4> <progress value="70" max="100" height="80"></progress>
+        </div>
+        </div>
+
+    </section>
+    <section id="projects">
+        <h3 class="titr">پروژه ها</h3>
+        <div class="cadr">
+            <p>
+            عنوان:برآورد خط معافیت مالیاتی برای اخذ مالیات بر دارایی خانوار (موردمطالعه مالیات بر املاک و
+            مستغلات در کلانشهر اصفهان)
+        </p> 
+            <mark style="background-color: aquamarine;">اسفند 1394</mark>
+        </div>
+    </section>
+    <section id="contacts">
+        <h3 class="titr">تماس با من</h3>
+        <form action="">
+            <input type="text" placeholder="نام" />
+            <input type="email" placeholder="ایمیل" />
+            <input type="text" placeholder="موضوع" />
+            <textarea maxlength="200">متن پیام</textarea>
+            <button type="submit">ارسال</button>
+        </form>
+
+    </section>
 
     </div>
+    <script src="java.js"></script>
 </body>
 
 </html>
