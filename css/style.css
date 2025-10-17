@@ -9,13 +9,12 @@
 	font-weight: normal;	font-style: normal;
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  
 }
-
 
 body {
     font-family: Yekan, sans-serif;
@@ -35,7 +34,8 @@ a {
 }
 
 
- .active, li:hover{
+
+ .active, li:hover,li:focus{
     background:#5F6768;
 }
 
@@ -53,6 +53,7 @@ a {
     flex-direction:row;
     justify-content:start;
     z-index:2;
+    top:0;
 
 }
 
@@ -60,19 +61,16 @@ a {
     display:flex;
     justify-content:start;
     
-    
 }
-.show { 
-    display: inline-block !important; 
-}
+
 
 .header-menu-burger {
     display: none;
-    background:#28cf65;
+    background:none;
     border: none;
     line-height: 80px;
     color:#ffffff;
-    
+          
 }
     
 .app {
@@ -104,26 +102,32 @@ a {
         padding: 0 5px;    
     }
     
-    
-    
-
    }
 
 
 @media (max-width:767.98px) {
     .header-menu-burger {
-        display: inline-block;
+        display:inline-block;
         padding:10px;
-       
-          
+               
     }
 
     .nav {
         display: none;
+        flex-direction: column;
+        background-color: #28cf65;
+      }
+      
+      .nav.active {
+        display: flex;
         width: 100%;
-        
-        
-    }
+      }
+
+
+      .nav a {
+        color:white;
+      }
+      
 
     .header-menu-item {
         display: block;
@@ -190,7 +194,7 @@ a {
     margin-right:40px;
     border-radius:50%;
     margin-left:20px;
-    border:5px solid  beige; 
+    border:7px solid #FFE4C4; 
     
 }
 
@@ -268,6 +272,7 @@ progress {
     background-color: #ffffff;
     transition:color 3s;
 }
+
 progress::-webkit-progress-bar {
     background-color: #ffffff;
     border:1px  solid  #28cf65;
@@ -289,11 +294,11 @@ progress::-moz-progress-bar {
 
 .skills {
     display: flex; 
-    justify-content:space-evenly; 
+    justify-content:space-between; 
     flex-wrap:wrap;
-    width:65%;   
+    width:65%; 
+      
 }
-
 
 
 #lang{
@@ -307,7 +312,7 @@ progress::-moz-progress-bar {
 
 .langs {
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     flex-wrap:wrap;
     width:70%;
 }
@@ -349,14 +354,15 @@ progress::-moz-progress-bar {
 
 input{
     padding:8px 8px 0 0;
+    font-size:1rem;
     border-color:#E6E1DF;
 }
 
 textarea{
     padding:8px 8px 0 0;
     font-size:1rem;
+    font-family:Yekan;
     border-color:#E6E1DF;
-    
     resize:none;
 }
 input:hover {
@@ -372,6 +378,7 @@ textarea:hover {
     justify-self:center;
     transition:filter 1s;
     width:130px;
+    height:40px;
     grid-column-start: 1;
     grid-column-end: 3;
 }
